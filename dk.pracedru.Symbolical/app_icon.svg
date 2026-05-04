@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="app_icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="0.64910193"
+     inkscape:cx="385.14752"
+     inkscape:cy="63.934489"
+     inkscape:window-width="1941"
+     inkscape:window-height="1320"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showguides="false" />
+  <defs
+     id="defs1">
+    <rect
+       x="422.12169"
+       y="-275.76563"
+       width="465.25821"
+       height="442.14936"
+       id="rect13" />
+  </defs>
+  <g
+     inkscape:label="Lag 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#008dd7;fill-opacity:1;stroke:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke;stroke-opacity:1"
+       id="path1"
+       cx="256.4939"
+       cy="256.64127"
+       r="246.56433" />
+    <path
+       d="m 454.78773,27.525807 24.66664,-135.666537 h -15.99998 q -7.33333,0 -10.99999,2.33333 -3.66667,2 -10.66666,9.333328 l -14.33332,-4.666658 q 6,-28.66664 17.99998,-39.3333 12.33333,-10.66666 31.99997,-10.66666 h 156.33318 l -3.99999,42.99996 h -41.66663 l 6.33333,85.333252 q 1,14.3333198 4.33333,20.666647 3.33333,5.9999941 9.99999,5.9999941 2,0 5.33333,-0.999999 3.33333,-0.999999 7.99999,-3.9999961 l 8.66666,20.333313 q -9.66666,5.333329 -18.66665,8.333326 -8.66666,3.33333 -18.33332,3.33333 -21.33331,0 -32.3333,-12.333322 -10.99999,-12.3333208 -7.66666,-36.333297 l 11.99999,-90.333248 h -63.99994 l 5,135.666537 z"
+       id="text13"
+       style="font-weight:bold;font-size:333.333px;font-family:'Noto Serif';-inkscape-font-specification:'Noto Serif, Bold';white-space:pre;fill:#ffffff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       transform="matrix(1.5135309,0,0,1.5135309,-555.00411,351.3268)"
+       aria-label="π" />
+  </g>
+</svg>

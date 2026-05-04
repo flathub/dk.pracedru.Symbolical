@@ -1,0 +1,59 @@
+id: dk.pracedru.Symbolical
+runtime: org.kde.Platform
+runtime-version: '6.10'
+sdk: org.kde.Sdk
+base: com.riverbankcomputing.PyQt.BaseApp
+base-version: '6.10'
+command: symbolical
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=xdg-documents
+  - --filesystem=xdg-pictures
+  - --socket=pulseaudio
+  - --env=QT_AUDIO_BACKEND=pulseaudio
+  - --socket=cups
+modules:
+  - name: desktop-entry
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 dk.pracedru.Symbolical.desktop /app/share/applications/dk.pracedru.Symbolical.desktop
+      - install -Dm644 dk.pracedru.Symbolical.xml /app/share/mime/packages/dk.pracedru.Symbolical.xml
+      - install -Dm644 icon-256.png /app/share/icons/hicolor/256x256/apps/dk.pracedru.Symbolical.png
+      - install -Dm644 NotoSerif.ttf /app/share/fonts/NotoSerif.ttf
+      - fc-cache -f -v || true
+      - install -Dm644 index.theme /app/share/icons/hicolor/index.theme
+      - install -Dm644 app_icon.svg /app/share/icons/hicolor/scalable/mimetypes/symbolical-file.svg
+      - gtk-update-icon-cache -f /app/share/icons/hicolor
+    sources:
+      - type: file
+        path: dk.pracedru.Symbolical.desktop
+      - type: file
+        path: dk.pracedru.Symbolical.xml
+      - type: file
+        path: icon-256.png
+      - type: file
+        path: NotoSerif.ttf
+      - type: file
+        path: app_icon.svg
+      - type: file
+        path: index.theme
+  - name: mime-update
+    buildsystem: simple
+    build-commands:
+      - update-mime-database /app/share/mime
+  - name: symbolical
+    buildsystem: simple
+    build-commands:
+      - install -d /app/symbolical
+      - cp -r * /app/symbolical/
+      - install -Dm755 launcher.sh /app/bin/symbolical
+    sources:
+      - type: file 
+        path: launcher.sh
+      - type: git
+        url: https://gitlab.com/symbolical/symbolical.git
+        commit: 65b1967f
+
