@@ -58,5 +58,5 @@ modules:
         path: launcher.sh
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: 65b1967f
+        commit: 7079c86b
 
