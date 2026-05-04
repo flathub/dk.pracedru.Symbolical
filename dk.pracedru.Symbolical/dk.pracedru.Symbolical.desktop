@@ -3,5 +3,5 @@ Name=Symbolical
 Exec=symbolical %f
 Type=Application
 Categories=Utility;
-Icon=com.pracedru.Symbolical
+Icon=dk.pracedru.Symbolical
 MimeType=application/x-symbolical;
