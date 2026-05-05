@@ -20,9 +20,9 @@ modules:
       - install -d /app/symbolical
       - cp -r src/* /app/symbolical/
       - install -Dm755 flatpak/flatpak_launcher.sh /app/bin/symbolical
-      - install -Dm644 flatpak/dk.pracedru.Symbolical.flatpak /app/share/applications/dk.pracedru.Symbolical.flatpak
+      - install -Dm644 flatpak/dk.pracedru.Symbolical.desktop /app/share/applications/dk.pracedru.Symbolical.desktop
       - install -Dm644 flatpak/dk.pracedru.Symbolical.xml /app/share/mime/packages/dk.pracedru.Symbolical.xml
-      - install -Dm644 src/icons/icon-256.png /app/share/icons/hicolor/256x256/apps/dk.pracedru.Symbolical.png
+      - install -Dm644 src/icons/app_icon_256.png /app/share/icons/hicolor/256x256/apps/dk.pracedru.Symbolical.png
       - install -Dm644 fonts/NotoSerif.ttf /app/share/fonts/NotoSerif.ttf
       - fc-cache -f -v || true
       - install -Dm644 flatpak/index.theme /app/share/icons/hicolor/index.theme
@@ -36,4 +36,4 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: 30b2eb4e
+        commit: 4dc4e914
