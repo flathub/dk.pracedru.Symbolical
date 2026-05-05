@@ -1,6 +1,0 @@
-[project]
-name = "symbolical"
-version = "0.5.0"
-
-[project.scripts]
-symbolical = "symbolical.main:main"

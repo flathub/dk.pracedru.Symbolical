@@ -1,8 +1,0 @@
-[Icon Theme]
-Name=Hicolor
-Comment=Fallback icon theme
-Directories=scalable/mimetypes
-
-[scalable/mimetypes]
-Size=256
-Type=Scalable

@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Symbolical
-Exec=symbolical %f
-Type=Application
-Categories=Utility;
-Icon=dk.pracedru.Symbolical
-MimeType=application/x-symbolical;
