@@ -12,11 +12,10 @@ finish-args:
   - --device=dri
   - --socket=pulseaudio
   - --env=QT_AUDIO_BACKEND=pulseaudio
-  - --socket=cups
 modules:
   - name: symbolical
     buildsystem: meson
     sources:
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: 87df78a2
+        commit: cfb69642
