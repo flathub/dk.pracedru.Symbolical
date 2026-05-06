@@ -13,6 +13,7 @@ finish-args:
   - --socket=pulseaudio
   - --env=QT_AUDIO_BACKEND=pulseaudio
   - --socket=cups
+  - --filesystem=xdg-config/user-dirs.dirs
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 modules:
