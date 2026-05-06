@@ -12,6 +12,9 @@ finish-args:
   - --device=dri
   - --socket=pulseaudio
   - --env=QT_AUDIO_BACKEND=pulseaudio
+  - --socket=cups
+cleanup-commands:
+  - /app/cleanup-BaseApp.sh
 modules:
   - name: symbolical
     buildsystem: meson
