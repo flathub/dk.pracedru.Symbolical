@@ -13,7 +13,6 @@ finish-args:
   - --socket=pulseaudio
   - --env=QT_AUDIO_BACKEND=pulseaudio
   - --socket=cups
-  - --filesystem=xdg-config/user-dirs.dirs
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 modules:
@@ -22,4 +21,4 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: 45acdd87
+        commit: b32a4101
