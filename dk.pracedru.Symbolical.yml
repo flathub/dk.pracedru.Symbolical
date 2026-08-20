@@ -30,5 +30,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: b262439c2a54f9350f8c30ca86364437eba8709e
-        tag: v0.6.5.0
+        commit: d43f49f352e6ab4a613a84e54aec0cf7664d79b0
+        tag: v0.6.5.1
