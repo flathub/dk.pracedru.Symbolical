@@ -21,14 +21,11 @@ build-options:
   env:
     - BASEAPP_REMOVE_WEBENGINE=1
 modules:
-  - patchelf.json
   - python3-python-dateutil.json
-  - python3-meson-python.json
-  - python3-dbus-python.json
   - name: symbolical
     buildsystem: meson
     sources:
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: d43f49f352e6ab4a613a84e54aec0cf7664d79b0
-        tag: v0.6.5.1
+        commit: 42dfc5d50b2ba808e6ba03f01ba1ae5b6e3d9235
+        tag: v0.6.8.0
