@@ -10,11 +10,13 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
+  - --socket=cups
   - --socket=pulseaudio
   - --env=QT_AUDIO_BACKEND=pulseaudio
-  - --socket=cups
   - --env=QT_SCALE_FACTOR_ROUNDING_POLICY=Round
   - --system-talk-name=org.freedesktop.Accounts
+  - --filesystem=xdg-templates
+  - --filesystem=xdg-documents
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 build-options:
@@ -27,5 +29,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: 42dfc5d50b2ba808e6ba03f01ba1ae5b6e3d9235
-        tag: v0.6.8.0
+        commit: efa79bfd4d11ba620e97cc35cc8b8260e2a69d10
+        tag: v0.7.0.0
