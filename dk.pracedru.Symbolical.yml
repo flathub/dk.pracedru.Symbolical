@@ -27,7 +27,15 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DBUILD_SHARED_LIBS=ON
-      - -DYNAMIC_ARCH=ON
+      - -DDYNAMIC_ARCH=ON
+    build-options:
+      arch:
+        x86_64:
+          config-opts:
+            - -DTARGET=GENERIC
+        aarch64:
+          config-opts:
+            - -DTARGET=ARMV8
     sources:
       - type: archive
         url: https://github.com/OpenMathLib/OpenBLAS/releases/download/v0.3.34/OpenBLAS-0.3.34.tar.gz
