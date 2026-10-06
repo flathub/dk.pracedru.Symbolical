@@ -23,11 +23,38 @@ build-options:
   env:
     - BASEAPP_REMOVE_WEBENGINE=1
 modules:
+  - name: openblas
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DBUILD_SHARED_LIBS=ON
+      - -DDYNAMIC_ARCH=ON
+    build-options:
+      arch:
+        x86_64:
+          config-opts:
+            - -DTARGET=GENERIC
+        aarch64:
+          config-opts:
+            - -DTARGET=ARMV8
+    sources:
+      - type: archive
+        url: https://github.com/OpenMathLib/OpenBLAS/releases/download/v0.3.34/OpenBLAS-0.3.34.tar.gz
+        sha256: cd7e129868320cc2d033afa920e31202dfe0b8066a5b66661900ccc0f197dfed
+  - python3-meson-python.json
+  - python3-patchelf.json
   - python3-python-dateutil.json
+  - python3-pythran.json
+  - python3-pybind11.json
+  - python3-sympy.json
+  - python3-numpy.json
+  - python3-scipy.json  
+  - python3-pint.json
+  - python3-fonttools.json
+  - python3-openpyxl.json
   - name: symbolical
     buildsystem: meson
     sources:
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: efa79bfd4d11ba620e97cc35cc8b8260e2a69d10
-        tag: v0.7.0.0
+        commit: 7dc1bf96779ed71c330236f904efd3fbc0a504d5
+        tag: v0.8.0.0
