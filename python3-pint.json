@@ -1,0 +1,34 @@
+{
+    "name": "python3-pint",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pint\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/27/cd/c883e1a7c447479d6e13985565080e3fea88ab5a107c21684c813dba1875/flexcache-0.3-py3-none-any.whl",
+            "sha256": "d43c9fea82336af6e0115e308d9d33a185390b8346a017564611f1466dcd2e32"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/fe/5e/3be305568fe5f34448807976dc82fc151d76c3e0e03958f34770286278c1/flexparser-0.4-py3-none-any.whl",
+            "sha256": "3738b456192dcb3e15620f324c447721023c0293f6af9955b481e91d00179846"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/6d/5c/9507ea3c732f8a259f45ddf190a741e9bf7d3fe229b5d473917ee6efbf1e/pint-0.26.1-py3-none-any.whl",
+            "sha256": "e982b129415c09c63308f314ae44697d83e5c96f253bcc0d5b833fc3329eb6d4"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/60/3a/723ad221b7fef91ccd947f9fddbe84d38fa573e2723317aaa67bfde41015/platformdirs-4.12.0-py3-none-any.whl",
+            "sha256": "f6fb2960f2f2eb0870f820f7e49e49e6c0f0589c637f34d33b260b07591327c9"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+            "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+        }
+    ]
+}

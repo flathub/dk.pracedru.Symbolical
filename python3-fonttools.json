@@ -1,0 +1,14 @@
+{
+    "name": "python3-fonttools",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"fonttools\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/f6/10/d45b74135d5d642cb3a4fb0a957c1613ef93de4c8548671dfc3a5bf38299/fonttools-4.66.1-py3-none-any.whl",
+            "sha256": "7234ae9e28db64273fbbfa72caebd0a97e3bdba6b05064114741b9539ef339d0"
+        }
+    ]
+}
