@@ -24,7 +24,7 @@ build-options:
     - BASEAPP_REMOVE_WEBENGINE=1
 modules:
   - name: openblas
-    buildsystem: cmake-ninja 
+    buildsystem: cmake-ninja
     config-opts:
       - -DBUILD_SHARED_LIBS=ON
       - -DDYNAMIC_ARCH=ON
@@ -58,3 +58,4 @@ modules:
         url: https://gitlab.com/symbolical/symbolical.git
         commit: 2fe62e4c7693b873e1b7c9f19885bc4b44d46d02
         tag: v0.9.0.0
+
