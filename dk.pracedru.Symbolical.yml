@@ -17,6 +17,7 @@ finish-args:
   - --system-talk-name=org.freedesktop.Accounts
   - --filesystem=xdg-templates
   - --filesystem=xdg-documents
+  - --share=network
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
 build-options:
@@ -56,5 +57,5 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: 2fe62e4c7693b873e1b7c9f19885bc4b44d46d02
-        tag: v0.9.0.0
+        commit: db17a5dd58d26de4da20184c158f0ded3862ade8
+        #tag: v0.9.0.0
