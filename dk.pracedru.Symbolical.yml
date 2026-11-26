@@ -52,11 +52,12 @@ modules:
   - python3-pint.json
   - python3-fonttools.json
   - python3-openpyxl.json
+  - python3-codac.json
   - name: symbolical
     buildsystem: meson
     sources:
       - type: git
         url: https://gitlab.com/symbolical/symbolical.git
-        commit: 7f904ade458196727076ed6e513b8c9811c276eb
-        tag: v0.9.0.1
+        commit: 6f98932fcaca12b761feda5b58e504a804cfe766
+        tag: v1.0.0.2
 

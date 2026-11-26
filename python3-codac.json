@@ -1,0 +1,30 @@
+{
+    "name": "python3-codac",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"codac\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/cd/d7/83e3b146317fc1f0870a61c4b3f40dcec61d48b1589c5ffe2d5c7fc31a21/codac-2.2.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+            "sha256": "edcee83005a9a3f9fd2446de740cc9ce2d4bbb59caa5894e02638da21eeafc7a",
+            "only-arches": [
+                "x86_64"
+            ]
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/2a/dc/6fe65027cf9669c5bfd5b68434e028334f233c7ea04ff2e91ae4c161f251/codac-2.2.0-cp313-cp313-manylinux_2_26_aarch64.manylinux_2_28_aarch64.whl",
+            "sha256": "8d650cc90918e6304afaf5c17faedda0cc1fecc8ae6c856e82a4343367ccef62",
+            "only-arches": [
+                "aarch64"
+            ]
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/20/3a/c19179d02310793aae928682a6435f97fe57e892f057048f1624b3675474/vibes-0.2.2.tar.gz",
+            "sha256": "4fda81a1449bf518e1d23e5cf078d7b13e4a241a954bd03a6709543fcd58b51e"
+        }
+    ]
+}
